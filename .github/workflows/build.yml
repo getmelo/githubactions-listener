@@ -1,6 +1,9 @@
 name: Hello GitHub Actions
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
   repository_dispatch:
     types: [client-dispatched] # the name here is referred to by the dispatch
 
